@@ -1,5 +1,3 @@
-  GNU nano 2.9.3                                                                                                     server.js                                                                                                               
-
 var express = require('express');
 var app = express();
 var server = app.listen(process.env.PORT || 3000);
