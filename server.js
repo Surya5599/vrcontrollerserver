@@ -22,7 +22,7 @@ function newConnection(socket){
 
   function sendData(data){
     //console.log("data:",data)
-    socket.emit("phoneInfo", data);
+    socket.emit('phoneInfo"', data);
     //socket.broadcast.to(data.room).emit("userJoined", newData);
   }
 
