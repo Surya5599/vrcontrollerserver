@@ -21,7 +21,13 @@ function newConnection(socket){
   socket.on('select', selectData);
   socket.on('squeeze', squeezeData);
   socket.on('reset', resetData);
-
+  socket.on('position', positionData);
+  
+  function positionData(data){
+    //console.log("data:",data)
+    io.sockets.emit('positionData', data);
+    //socket.broadcast.to(data.room).emit("userJoined", newData);
+  }
 
   function sendData(data){
     //console.log("data:",data)
